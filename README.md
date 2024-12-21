@@ -1,7 +1,7 @@
 # ssh-raspberry-pi-beginners-guide
 This is a guide for using SSH to connect to a Raspberry Pi on a local network. 
 
-## Requirmeents:
+## Requirements:
 
 - Raspberry Pi Imager (free software)
 
