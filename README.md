@@ -57,7 +57,7 @@ You should see a list of all external storage devices currently conected to your
 
 10. Set the hostname, username, password, SSID (the name of the WiFi which you choose when you connect to WiFi), your WiFi password, and locale settings.
 
-*Make sure to remember the hostname and username as they will be needed in previous steps!*
+**Make sure to remember the hostname, username and password as they will be needed in previous steps!**
 
 12. Click on the "Services" tab at the top of the OS Customization window and you should see the following screen:
 
