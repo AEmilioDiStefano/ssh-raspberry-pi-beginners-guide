@@ -125,13 +125,13 @@ You will then see a list of network parameters for each interface.  One of these
 
 ```bash
 sudo arp-scan -l --interface=[network_name]
-```bash
+```
 
-Foe example, if your interface is called "wlp2s0", then the command should be written as follows:
+For example, if your interface is called "wlp2s0", then the command should be written as follows:
 
 ```bash
 sudo arp-scan -l --interface=wlp2s0
-```bash
+```
 
 You will then see a list of IP addresses, first written in arabic numerals (normal numbers), then in hexidecimal, then the name of the companty which made the device.  **One of these lines should finish with **Raspberry Pi Trading Ltd**.  Note the IP address written at the left side of the same line as this will be needed in the next step.
 
@@ -139,13 +139,13 @@ You will then see a list of IP addresses, first written in arabic numerals (norm
 
 ```bash
 ssh [username].[IP address]
-```bash
+```
 
 For example, if your username was "emilio" and your Raspberry Pi's IP address was 192.168.0.1, then the commnd should be entered as follows:
 
 ```bash
 ssh emilio.192.168.0.1
-```bash
+```
 
 **You should now be able to access your Raspberry Pi device via SSH.**
 
