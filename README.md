@@ -59,8 +59,40 @@ You should see a list of all external storage devices currently conected to your
 
 **Make sure to remember the hostname, username and password as they will be needed in previous steps!**
 
-12. Click on the "Services" tab at the top of the OS Customization window and you should see the following screen:
+11. Click on the "Services" tab at the top of the OS Customization window and you should see the following screen:
 
 ![host-and-port](images/10_raspberry_pi_imager_os_customization_2_services.png)
 
-12. 
+** Make sure that the "ENABLE SSH" and "USE PASSWORD AUTHENTICATION" options are checked.
+
+12. The default settings in the "Options" tab can be left as they are.
+
+![host-and-port](images/11_raspberry_pi_imager_os_customization_3_options.png)
+
+**Make sure that the box marked "EJECT MEDIA WHEN FINISHED" is checked!**
+
+13. Click "Save" and you should return to the following screen:
+
+![host-and-port](images/12_raspberry_pi_imager_os_customization_4.png)
+
+14. Click "YES" and you should see the following screen:
+
+![host-and-port](images/13_raspberry_pi_imager_customization_5.png)
+
+Click "YES".
+
+15. Wait for the process should complete.  It will take a few minutes for the image to be written to the Micro SD card.  Exact time will depend on your operating system and hardware.
+
+16. When the process is complete, Raspberry Pi Imager should let you know that you can safely remove the Micro SD card.
+
+17. Put the Micro SD card into the Micro SD card slot of your Raspberry Pi device.
+
+18. Plug your power source into your Raspberry Pi (or plug it into the wall using the power adapter) and wait a few minutes for the system to start up.
+
+**The Raspberry Pi device should boot the operating system image from the Micro SD card.**
+
+## Using SSH to remotely access your Raspberry Pi.
+
+
+
+
