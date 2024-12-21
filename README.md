@@ -196,9 +196,36 @@ ssh-keygen -R 192.168.0.1
 
 ## 3. Your personal computer is not set up as an SSH client. 
 
-The following instructions will allow you to set up a computer with an Ubuntu or Debian-based operating system.  Instructions for setting up a computer with a Windows operating system can be found *[HERE](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)* or *[HERE](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui&pivots=windows-server-2025)*.
+**The following instructions will allow you to set up a computer with an Ubuntu or Debian-based operating system.**  
 
+Instructions for setting up a computer with a Windows operating system can be found *[HERE](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)* or *[HERE](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui&pivots=windows-server-2025)*.
 
+**1.** Open the Terminal
 
+**2.** Update the repository by entering the following command: 
+
+```bash
+sudo apt update
+```
+
+**3.** Install OpenSSH by entering the following command: 
+
+```bash
+sudo apt install openssh-server -y
+```
+
+**4.** Enable the service by entering the following command: 
+
+```bash
+sudo systemctl enable ssh
+```
+
+**5.** Start the SSH service by entering the following command: 
+
+```bash
+sudo systemctl start ssh
+```
+
+** You should now be able to successfully SSH into your Raspberry Pi device.
 
 
