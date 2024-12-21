@@ -110,6 +110,18 @@ ssh emilio@myHostName
 
 # Common Issues:
 
+## 1. Unable to resolve hostname.
+
+**When you attempt to SSH into your Raspberry Pi, you may see an error stating that SSH "Could not resolve hostname [your_hostname]: Name or Service Unknown".  The following steps will likely allow you to SSH into your Raspberry Pi device:**
+
+**1.** First find the IP address of your Raspberry Pi device by first entering the following script into your terminal:
+
+```bash
+ifconfig
+```
+You will then see a list of network parameters.  One of these specification blocks should read something like "WLAN", 
+
+
 
 
 
