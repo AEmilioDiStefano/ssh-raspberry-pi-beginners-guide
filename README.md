@@ -43,17 +43,17 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 7. Click on "CHOOSE STORAGE" and you shoudl see the following screen:
 
-![host-and-port](images/7_raspberry_pi_choose_storage_screenshot.png)
+![host-and-port](images/7_raspberry_pi_choose_choose_storage_screenshot.png)
 
 You should see a list of all external storage devices currently conected to your computer (if any are connected).
 
 8. Once you have chosen a device, an OS, and a memory device, click on "NEXT" and you should see the following screen:
 
-![host-and-port](images/8_raspberry_pi_imager_next_button_screenshot)
+![host-and-port](images/8_raspberry_pi_imager_next_button_screenshot.png)
 
 9. Click on "Edit Settings and you should see the following screen:
 
-![host-and-port](images/9_raspberry_pi_os_customization_1_general.png)
+![host-and-port](images/9_raspberry_pi_imager_os_customization_1_general.png)
 
 10. Set the hostname, username, password, SSID (the name of the WiFi which you choose when you connect to WiFi), your WiFi password, and locale settings.
 
