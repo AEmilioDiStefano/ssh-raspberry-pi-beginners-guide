@@ -17,6 +17,8 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 2. Once it has been installed, look for the Raspberry Pi Imager application and open it to confirm successful instalation.  The application may just be called "Imager" but it should have the Raspberry Pi logo as its icon (a purple/pink image of a raspberry as of December 2024).
 
+![host-and-port](images/2-raspberry-pi-imager-download-screenshot.png)
+
 ## Install the operating system on your Raspberry Pi
 
 1. Insert your MicroSD card
