@@ -155,6 +155,6 @@ ssh emilio.192.168.0.1
 
 This error is thrown when you SSH into your Raspberry Pi, change the specifications of the device at that IP address (which will take place when you boot another operating system onto your Raspberry Pi), and try to SSH back into your Raspberry Pi device.  Since the username, host name and password have been changed, the system thinks that someone may be manipulating it maliciously.
 
-**In order to fix thisissue, we need to reset the configured settings of our device at said IP address by following the following steps:**
+**In order to address this issue, we need to reset the configured settings of our device at said IP address by following the following steps:**
 
 **1.** 
