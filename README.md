@@ -53,7 +53,7 @@ You should see a list of all external storage devices currently conected to your
 
 9. Click on "Edit Settings and you should see the following screen:
 
-![host-and-port](images/9_raspberry_pi_os_customization_1.png)
+![host-and-port](images/9_raspberry_pi_os_customization_1_general.png)
 
 10. Set the hostname, username, password, SSID (the name of the WiFi which you choose when you connect to WiFi), your WiFi password, and locale settings.
 
