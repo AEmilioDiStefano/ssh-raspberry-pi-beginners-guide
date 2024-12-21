@@ -33,7 +33,7 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 **4.** Selet the specific Raspberry Pi on which you would like to install an operating system.
 
-*5.** Click on "CHOOSE OS" and you should see the following screen:
+**5.** Click on "CHOOSE OS" and you should see the following screen:
 
 ![host-and-port](images/5_raspberry_pi_imager_choose_os.png)
 
@@ -93,7 +93,23 @@ Click "YES".
 
 ## Use SSH to remotely access your Raspberry Pi. 
 
-**1.**  
+**1.** Enter a terminal or command prompt on your personal computer.
+
+**2.** Enter the folllowing command into your terminal or command prompt with the username and hostname which you chose in the previous steps:
+
+```bash
+ssh [username]@[hostname]
+```
+For example, if your chosen username was **emilio** and your hostname was **myHostName**, then the command would be as follows: 
+
+```bash
+ssh emilio@myHostName
+```
+
+**3.** You should see a prompt for the user's password (the password which you set in previous steps), but if you get some sort of error and are unable to connect, then review the information below.
+
+# Common Issues:
+
 
 
 
