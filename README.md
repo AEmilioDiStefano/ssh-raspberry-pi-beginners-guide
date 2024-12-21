@@ -79,9 +79,9 @@ You should see a list of all external storage devices currently conected to your
 
 ![host-and-port](images/13_raspberry_pi_imager_customization_5.png)
 
-Click "YES".
+Click "YES" again.
 
-**15.** Wait for the process should complete.  It will take a few minutes for the image to be written to the Micro SD card.  Exact time will depend on your operating system and hardware.
+**15.** Wait for the process to complete.  It will take a few minutes for the image to be written to the Micro SD card.  Exact time will depend on your operating system and hardware.
 
 **16.** When the process is complete, Raspberry Pi Imager should let you know that you can safely remove the Micro SD card.
 
@@ -119,10 +119,42 @@ ssh emilio@myHostName
 ```bash
 ifconfig
 ```
-You will then see a list of network parameters.  One of these specification blocks should read something like "WLAN", 
+You will then see a list of network parameters for each interface.  One of these interfaces should read something like "wlan0", "wlp2s0", or something similar (usually it will be the last specification block listed).  Write down the exact name of this interface for use in the previous step.
 
+**2.** Type the following code into your terminal replacing the text [network_name] with the network name which you wrote down in the previous step:
 
+```bash
+sudo arp-scan -l --interface=[network_name]
+```bash
 
+Foe example, if your interface is called "wlp2s0", then the command should be written as follows:
 
+```bash
+sudo arp-scan -l --interface=wlp2s0
+```bash
 
+You will then see a list of IP addresses, first written in arabic numerals (normal numbers), then in hexidecimal, then the name of the companty which made the device.  **One of these lines should finish with **Raspberry Pi Trading Ltd**.  Note the IP address written at the left side of the same line as this will be needed in the next step.
 
+**3.** Now enter the following command, replacing the text [username] with the username which you originally entered at the time of writing the operating system to your Micro SD card, and replacing the text [IP address] with the IP address which you wrote down in the previous step:
+
+```bash
+ssh [username].[IP address]
+```bash
+
+For example, if your username was "emilio" and your Raspberry Pi's IP address was 192.168.0.1, then the commnd should be entered as follows:
+
+```bash
+ssh emilio.192.168.0.1
+```bash
+
+**You should now be able to access your Raspberry Pi device via SSH.**
+
+## 2. WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+
+![host-and-port](images/14_remote_host_identification_changed.png)
+
+This error is thrown when you SSH into your Raspberry Pi, change the specifications of the device at that IP address (which will take place when you boot another operating system onto your Raspberry Pi), and try to SSH back into your Raspberry Pi device.  Since the username, host name and password have been changed, the system thinks that someone may be manipulating it maliciously.
+
+**In order to fix thisissue, we need to reset the configured settings of our device at said IP address by following the following steps:**
+
+**1.** 
