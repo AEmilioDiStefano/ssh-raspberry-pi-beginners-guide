@@ -153,8 +153,52 @@ ssh emilio.192.168.0.1
 
 ![host-and-port](images/14_remote_host_identification_changed.png)
 
-This error is thrown when you SSH into your Raspberry Pi, change the specifications of the device at that IP address (which will take place when you boot another operating system onto your Raspberry Pi), and try to SSH back into your Raspberry Pi device.  Since the username, host name and password have been changed, the system thinks that someone may be manipulating it maliciously.
+This error is thrown when you SSH into your Raspberry Pi, change the specifications of the device at that IP address (which will take place when you boot another operating system onto your Raspberry Pi), and try to SSH back into your Raspberry Pi device.  Since the username, host name and password have been changed, the system thinks that someone may be manipulating your network maliciously.
 
 **In order to address this issue, we need to reset the configured settings of our device at said IP address by following the following steps:**
 
-**1.** 
+**1.** First find the IP address of your Raspberry Pi device by first entering the following script into your terminal:
+
+```bash
+ifconfig
+```
+You will then see a list of network parameters for each interface.  One of these interfaces should read something like "wlan0", "wlp2s0", or something similar (usually it will be the last specification block listed).  Write down the exact name of this interface for use in the previous step.
+
+**2.** Type the following code into your terminal replacing the text [network_name] with the network name which you wrote down in the previous step:
+
+```bash
+sudo arp-scan -l --interface=[network_name]
+```
+
+For example, if your interface is called "wlp2s0", then the command should be written as follows:
+
+```bash
+sudo arp-scan -l --interface=wlp2s0
+```
+
+You will then see a list of IP addresses, first written in arabic numerals (normal numbers), then in hexidecimal, then the name of the companty which made the device.  **One of these lines should finish with **Raspberry Pi Trading Ltd**.  Note the IP address written at the left side of the same line as this will be needed in the next step.
+
+**3.** Now enter the following command, replacing the text [username] with the username which you originally entered at the time of writing the operating system to your Micro SD card, and replacing the text [IP address] with the IP address which you wrote down in the previous step:
+
+**4.** Reset the host specifications by entering the following command into your terminal and replacing the text [IP address] with the IP address of your Raspberry Pi device:
+
+```bash
+ssh-keygen -R [IP address]
+```
+
+For example, if your Raspberry Pi device's IP address is 192.168.0.1, then the command should read as follows: 
+
+```bash
+ssh-keygen -R 192.168.0.1
+```
+
+**You should not be able to SSH into your Raspberry Pi without any issues.  If you boot another OS onto your Raspbeery Pi or change the remote host identification of your Raspberry Pi device for any other reason, then this step must be repeated.**
+
+## 3. Your personal computer is not set up as an SSH client. 
+
+The following instructions will allow you to set up a computer with an Ubuntu or Debian-based operating system.  Instructions for setting up a computer with a Windows operating system can be found *[HERE](https://learn.microsoft.com/en-us/windows/terminal/tutorials/ssh)* or *[HERE](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui&pivots=windows-server-2025)*.
+
+
+
+
+
