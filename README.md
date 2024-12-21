@@ -7,7 +7,7 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 - Raspberry Pi Single-Board Computer
 
-- Micro SD card (and a way to connect it to your personal computer)
+- Micro SD card with at least 32 gigabytes of storage  (and a way to connect it to your personal computer)
 
 ## Get Raspberry Pi Imager
 
@@ -19,4 +19,4 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 ## Install the operating system on your Raspberry Pi
 
-1. 
+1. Insert your MicroSD card
