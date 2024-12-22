@@ -41,7 +41,7 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 ![host-and-port](images/6_raspberry_pi_imager_use_custom_os.png)
 
-**7.** Click on "CHOOSE STORAGE" and you shoudl see the following screen:
+**7.** Click on "CHOOSE STORAGE" and you should see the following screen:
 
 ![host-and-port](images/7_raspberry_pi_imager_choose_storage.png)
 
