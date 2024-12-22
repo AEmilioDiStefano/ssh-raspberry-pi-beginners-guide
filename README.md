@@ -23,7 +23,7 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 **1.** Insert your MicroSD card into your computer with a USB adapter or full-sized SD card with a slot for Micro SDs.
 
-**2.** Open the Raspberry Pi Imager app. You should see a indow that looks like this:
+**2.** Open the Raspberry Pi Imager app. You should see a window that looks like this:
 
 ![host-and-port](images/3_raspberry_pi_imager_interface.png)
 
