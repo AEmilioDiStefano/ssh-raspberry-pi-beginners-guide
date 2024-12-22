@@ -230,6 +230,6 @@ sudo systemctl enable ssh
 sudo systemctl start ssh
 ```
 
-** You should now be able to successfully SSH into your Raspberry Pi device.**
+**You should now be able to successfully SSH into your Raspberry Pi device.**
 
 
