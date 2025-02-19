@@ -196,7 +196,7 @@ For example, if your Raspberry Pi device's IP address is 192.168.0.1, then the c
 ssh-keygen -R 192.168.0.1
 ```
 
-**You should not be able to SSH into your Raspberry Pi without any issues.  If you boot another OS onto your Raspbeery Pi or change the remote host identification of your Raspberry Pi device for any other reason, then this step must be repeated.**
+**You should now be able to SSH into your Raspberry Pi without any issues.  If you boot another OS onto your Raspbeery Pi or change the remote host identification of your Raspberry Pi device for any other reason, then this step must be repeated.**
 
 ## 3. Your personal computer is not set up as an SSH client. 
 
