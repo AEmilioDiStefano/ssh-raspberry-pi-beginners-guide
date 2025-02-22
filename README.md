@@ -11,7 +11,7 @@ This is a guide for using SSH to connect to a Raspberry Pi on a local network.
 
 ## Install Raspberry Pi Imager
 
-**1.** If you have no tdone so already, go to the *[Raspberry Pi website](https://www.raspberrypi.com/software/)* and download the Raspberry Pi imager for your personal computer's operating system (Windows, Mac, Linux).
+**1.** If you have not done so already, go to the *[Raspberry Pi website](https://www.raspberrypi.com/software/)* and download the Raspberry Pi imager for your personal computer's operating system (Windows, Mac, Linux).
 
 ![host-and-port](images/1-raspberry_pi_imager_download.png)
 
