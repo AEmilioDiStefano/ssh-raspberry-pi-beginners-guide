@@ -7,7 +7,7 @@ This is a guide for using SSH to connect to a Raspberry Pi **from a linux system
 
 - Raspberry Pi Single-Board Computer
 
-- Micro SD card with at least 32 gigabytes of storage  (and a way to connect it to your personal computer via SD or USB SD adapter)
+- Micro SD card with at least 32 gigabytes of storage  (and a way to connect it to your personal computer via SD or USB micro SD adapter)
 
 ## Install Raspberry Pi Imager
 
