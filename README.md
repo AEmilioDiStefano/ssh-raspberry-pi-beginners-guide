@@ -1,7 +1,7 @@
 # ssh-raspberry-pi-beginners-guide
 This is a guide for using SSH to connect to a Raspberry Pi **from a linux system** via a local network. 
 
-If you are attempting to connect from a Windows system, using a popular search engine and entering "Windows alternative to" followed by the corresponding Linux command into into the search field will yield results which will enable you to use this guide with a small amount of additional research.  Practicing this type of research is a great way to prepare for professional-level software engineering.
+If you are attempting to connect from a Windows system, using a popular search engine and entering "Windows alternative to" followed by the corresponding Linux command into into the search field will yield results which will enable you to use this guide with a small amount of additional research.  **Practicing this type of research is a great way to prepare for professional-level software engineering.**
 
 ## Requirements:
 
