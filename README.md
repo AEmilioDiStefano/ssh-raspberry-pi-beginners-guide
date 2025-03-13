@@ -8,7 +8,7 @@ If you are attempting to connect from a Windows system, using a popular search e
 - Raspberry Pi Imager (free software)
 
 - Raspberry Pi Single-Board Computer
-
+ 
 - Micro SD card with at least 32 gigabytes of storage  (and a way to connect it to your personal computer via SD or USB micro SD adapter)
 
 ## Install Raspberry Pi Imager
