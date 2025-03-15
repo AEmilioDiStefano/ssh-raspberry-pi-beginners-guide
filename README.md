@@ -150,7 +150,7 @@ ssh [username].[IP address]
 For example, if your username was "emilio" and your Raspberry Pi's IP address was 192.168.0.1, then the commnd should be entered as follows:
 
 ```bash
-ssh emilio.192.168.0.1
+ssh emilio@192.168.0.1
 ```
 
 **You should now be able to access your Raspberry Pi device via SSH.**
