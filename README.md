@@ -144,7 +144,7 @@ You will then see a list of IP addresses, first written in arabic numerals (norm
 **3.** Now enter the following command, replacing the text [username] with the username which you originally entered at the time of writing the operating system to your Micro SD card, and replacing the text [IP address] with the IP address which you wrote down in the previous step:
 
 ```bash
-ssh [username].[IP address]
+ssh [username]@[IP address]
 ```
 
 For example, if your username was "emilio" and your Raspberry Pi's IP address was 192.168.0.1, then the commnd should be entered as follows:
